@@ -1,0 +1,93 @@
+body{
+
+  background-image: url("./paper.png")  ;
+}
+.App {
+  margin-left: 33%;
+  border: solid rgb(0, 0, 0);
+  border-radius: 2%;
+  /* margin-right: 50%; */
+  height: 350px;
+  width: 320px;
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.76);
+  box-shadow: 3px 2px 10px 2px white;
+}
+#tada{
+  color: white;
+  text-align: center;
+  text-decoration: underline #852c3f;
+}
+#image{
+  height: 110px;
+  width: 140px;
+  margin-top: 10px;
+  margin-left: 8%;
+  border-radius: 3px;
+}
+.name{
+  font-size: 15px;
+  margin-top: 5%;
+  font-weight: 500;
+}
+#address{
+ margin-top: 8%;
+ line-height: 30px;
+}
+.all{
+  margin-left: 8%;
+  color: white;
+  letter-spacing: 1px;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+.App:hover {
+  animation: shake 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
